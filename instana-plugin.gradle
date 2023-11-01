@@ -1,0 +1,17 @@
+repositories {
+    mavenCentral()
+}
+
+buildscript {
+   repositories {
+        google()
+        mavenCentral()
+    }
+   dependencies {
+      classpath "com.instana:android-agent-plugin:6.0.7"
+    }
+}
+
+dependencies {
+    implementation "com.instana:android-agent-runtime:6.0.7"
+}

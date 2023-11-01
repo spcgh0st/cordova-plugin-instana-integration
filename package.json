@@ -1,0 +1,17 @@
+{
+  "name": "ar.com.yamamoto.cordova.plugin.instana",
+  "version": "0.0.1",
+  "description": "",
+  "cordova": {
+    "id": "ar.com.yamamoto.cordova.plugin.instana",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "",
+  "license": "ISC"
+}

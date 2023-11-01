@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns="" id="ar.com.yamamoto.cordova.plugin.instana" version="0.0.1">
+
+    <name>Cordova Instana Plugin</name>
+    <description>Cordova Plugin for integrating Instana monitoring</description>
+
+    <js-module src="www/instana.js" name="instana">
+        <clobbers target="instana" />
+    </js-module>
+
+    <platform name="android">
+
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="InstanaPlugin">
+                <param name="android-package" value="ar.com.yamamoto.cordova.plugin.instana.InstanaPlugin" />
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/InstanaPlugin.java" target-dir="src/ar/com/yamamoto/cordova/plugin/instana"/>
+
+        <framework src="instana-plugin.gradle" custom="true" type="gradleReference" />
+    </platform>
+
+</plugin>
