@@ -4,8 +4,11 @@ Usage example:
 
 Add the following in onDeviceReady()
 
-```
-instana.initPlugin("INSTANA_KEY_PLUGIN_01", "https://<report-url>", callbackSuccess, callbackError);
+```javascript
+
+instana.initPlugin("INSTANA_KEY_PLUGIN_01",
+    "https://<report-url>", callbackSuccess, callbackError);
+
 ```
 
 
